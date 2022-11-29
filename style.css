@@ -1,0 +1,95 @@
+@font-face {
+	font-family: 'LM';
+	src: url(fonts/lemon_milk/LEMONMILK-Light.otf)
+    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    
+}
+
+
+/* generals selectors */
+body{
+    font-family: "LM";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #282856;
+    background: linear-gradient(135deg, #F5DEB355 25%, transparent 25%) -27px 0/ 54px 54px, linear-gradient(225deg, #F5DEB3 25%, transparent 25%) -27px 0/ 54px 54px, linear-gradient(315deg, #F5DEB355 25%, transparent 25%) 0px 0/ 54px 54px, linear-gradient(45deg, #F5DEB3 25%, #282856 25%) 0px 0/ 54px 54px;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.button-1{
+    border: 1px solid wheat;
+    padding: 0.5vw;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+}
+.button-1:hover{
+    background-color: wheat;
+    color: black;
+}
+h2{
+    color: white;
+    text-shadow: rgb(0, 0, 0) 2px 0 10px;
+}
+
+/* header */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: wheat;
+    font-size: 2vw;
+    padding: 5px 2vw;
+    width: 100vw;
+}
+ul{
+    display: flex;
+    gap: 7vw;
+}
+.logo span{
+    color: white;
+}
+
+/* form */
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-ex{
+    margin-bottom: 10px;
+}
+
+.formcard{
+    margin-top: 40px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    width: 200px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-bottom: 40px;
+    backdrop-filter: blur(0.5px);
+}
+::placeholder{
+    text-align: center;
+}
+form input{
+    outline: none;
+}
